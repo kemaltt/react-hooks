@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Accordion from "./components/Accordion";
+import Counter from "./components/Counter";
+import Search from "./components/Search";
+import UseEffect from "./components/UseEffect";
+import UseRef from "./components/UseRef";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const items = [
+  {
+    title: "What is React?",
+    content: "React is a front end javascript framework",
+  },
+  {
+    title: "Why use React?",
+    content: "React is a favorite JS library among engineers",
+  },
+  {
+    title: "How do you use React?",
+    content: "You use React by creating components",
+  },
+];
 
-export default App;
+export default () => {
+  //return <Accordion items = { items }/>;
+  //return <Search />;
+  // return <Counter / > ;
+  // return <UseEffect />;
+  return <UseRef />;
+};
