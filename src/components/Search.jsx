@@ -51,9 +51,11 @@ export default function Search() {
     <div>
       <div className="ui form container">
         <div className="field">
-          <label size="massive" className="label">
-            Enter Search Term
-          </label>
+          <div className="header_1">
+            <h2>Wikipedia</h2>
+            <h3>The Free Encyclopedia</h3>
+          </div>
+
           <div className="ui icon input">
             <input
               onChange={(e) => inputChange(e)}
@@ -66,7 +68,10 @@ export default function Search() {
             <i aria-hidden="true" className="search icon"></i>
           </div>
         </div>
-        <div className="ui celled list">{renderedResults}</div>
+
+        <div className="ui celled list" id="description">
+          {renderedResults}
+        </div>
       </div>
     </div>
   );
